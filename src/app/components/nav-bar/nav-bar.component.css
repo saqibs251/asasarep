@@ -1,0 +1,36 @@
+/*designing navbar */
+mat-toolbar {
+    background-color:  #0d6b92;
+    color: white;
+}
+
+.nav_Links {
+    list-style-type: none;
+}
+
+.navbar {
+    display: flex;
+    
+}
+
+li>span {
+    cursor: pointer;
+}
+
+.nav_Links, li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 5px;
+    
+}
+/*designing navbar ends */
+
+/*positioning asasa logo*/
+
+img {
+    width: 150x;
+    margin-top: 2px;
+    height: 40px;
+}
+
+/*positioning asasa logo ends*/

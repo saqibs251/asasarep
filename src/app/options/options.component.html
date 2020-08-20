@@ -1,0 +1,172 @@
+<div class="containerDiv">
+    <mat-card id="formContainer" class="mat-elevation-z8">
+
+        <div class="alert alert-success heading" role="alert">
+            <h2 class="alert-heading">Cities</h2>
+        </div>
+
+        <!--Cities Inputs-->
+
+        <div class="citiesInput">
+            <p>
+                <span>Add New City</span>
+            </p>
+            <mat-form-field style="display: block;" appearance="outline">
+                <mat-label>Add new city</mat-label>
+                <input matInput name="city" [(ngModel)]="city">
+            </mat-form-field>
+
+            <button style="background-color: #0d6b92; color: white;" mat-raised-button>
+                Add City
+            </button>
+            <hr>
+
+            <p>
+                <span>Added Cities</span>
+            </p>
+
+            <mat-form-field style="display: block; margin-top: 10px;" appearance="outline">
+                <mat-label>Added Cities</mat-label>
+                <mat-select placeholder="Added Citites" name="addedCities" [(ngModel)]="addedCities">
+                    <mat-option value="peshawar">
+                        Peshawar
+                    </mat-option>
+                    <mat-option value="Islamabad">
+                        Islamabad
+                    </mat-option>
+                    <mat-option value="Lahore">
+                        Lahore
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button style="background-color: #0d6b92; color: white;" mat-raised-button>
+                Edit
+            </button>
+            <button style="background-color: #38baa2; color: white; margin-left: 5px;" mat-raised-button>
+                Delete
+            </button>
+        </div>
+
+        <!--Location Inputs-->
+
+        <div class="locationInputs">
+            <div class="alert alert-success heading" role="alert">
+                <h2 class="alert-heading">Locations</h2>
+            </div>
+
+            <p>
+                <span>Add New Location</span>
+            </p>
+
+            <mat-form-field style="display: block;" appearance="outline">
+                <mat-label>Select Location</mat-label>
+                <mat-select name="selectedCity" [(ngModel)]="selectedCity">
+                    <mat-option value="peshawar">
+                        Peshawar
+                    </mat-option>
+                    <mat-option value="Islamabad">
+                        Islamabad
+                    </mat-option>
+                    <mat-option value="Lahore">
+                        Lahore
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style="display: block;" appearance="outline">
+                <mat-label>
+                    Enter new Location
+                </mat-label>
+                <input matInput name="newLocation" [(ngModel)]="newLocation">
+            </mat-form-field>
+
+            <p style="text-align: center;">
+                <span>OR</span>
+            </p>
+
+            <mat-form-field style="display: block;" appearance="outline">
+                <mat-label>Select Added Location</mat-label>
+                <mat-select name="selectedCity" [(ngModel)]="selectAddedLocation">
+                    <mat-option value="F-7">
+                        F-7
+                    </mat-option>
+                    <mat-option value="F-8">
+                        F-8
+                    </mat-option>
+                    <mat-option value="bahriaTown">
+                        Bahria Town
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Add Sub Location (Optional)</mat-label>
+                <input matInput name="subLocation" [(ngModel)]="subLocation">
+            </mat-form-field>
+
+            <button style="background-color: #0d6b92; color: white;" mat-raised-button>
+                Add Location
+            </button>
+
+            <hr>
+
+            <p>
+                <span>Added Locations</span>
+            </p>
+
+            <mat-form-field style="display: block; margin-top: 10px;" appearance="outline">
+                <mat-label>Select City</mat-label>
+                <mat-select placeholder="Select City" name="selectCity" [(ngModel)]="selectAddedCity">
+                    <mat-option value="peshawar">
+                        Peshawar
+                    </mat-option>
+                    <mat-option value="Islamabad">
+                        Islamabad
+                    </mat-option>
+                    <mat-option value="Lahore">
+                        Lahore
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style="display: block; margin-top: 10px;" appearance="outline">
+                <mat-label>Select Location</mat-label>
+                <mat-select name="selectLocation" [(ngModel)]="selectLocation">
+                    <mat-option value="F-7">
+                        F-7
+                    </mat-option>
+                    <mat-option value="F-8">
+                        F-8
+                    </mat-option>
+                    <mat-option value="bahriaTown">
+                        Bahria Town
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field style="display: block; margin-top: 10px;" appearance="outline">
+                <mat-label>Select Sub-Location</mat-label>
+                <mat-select placeholder="Select sub-Location" name="selectLocation" [(ngModel)]="selectSubLocation">
+                    <mat-option value="F-7/1">
+                        F-7/1
+                    </mat-option>
+                    <mat-option value="F-8/1">
+                        F-8/1
+                    </mat-option>
+                    <mat-option value="bahria town phase 8">
+                        Bahria Town Phase 9
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <button mat-raised-button style="background-color: #0d6b92; color: white;">
+                Edit
+            </button>
+            <button mat-raised-button style="background-color: #38baa2; color: white; margin-left: 5px;">
+                Delete
+            </button>
+
+        </div>
+    </mat-card>
+</div>

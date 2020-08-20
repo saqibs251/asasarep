@@ -1,0 +1,39 @@
+#formContainer {
+    margin: 20px 400px; 
+    border-radius: 10px
+}
+
+.citiesInput {
+    margin: 5px 0px;
+}
+
+button {
+    margin: 0px 0px;
+}
+
+.formButtons {
+    margin-left: 2px;
+}
+
+.locationInputs {
+    margin: 20px 0px;
+}
+
+p>span {
+    font-size: larger;
+    font-weight: 700;
+    color: #0d6b92 ;
+}
+
+mat-form-field {
+    display: block;
+}
+
+.heading {
+    height: 55px
+}
+
+  mat-label {
+      color: black;
+      opacity: 0.9;
+  }
