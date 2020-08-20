@@ -108,5 +108,10 @@ export class LeadsComponent implements OnInit {
     
   }
 
+  //Testing github
+
+  test() {
+    console.log("test");
+  }
 
 }
